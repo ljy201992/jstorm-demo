@@ -1,0 +1,10 @@
+
+如何打包：
+mvn clean package
+
+
+
+如何部署提交：前提 config.properties\log4j.xml\stormConfig.properties 拷贝到每台机器的 /home/work/jstorm_cluster/jstorm-0.9.6.3/biglog_conf 目录下
+在nimbus节点执行
+cd {jstorm home}
+jstorm jar word-count-demo-0.1.jar com.ljy.demo.BootStrap
